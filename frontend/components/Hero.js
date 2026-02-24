@@ -86,7 +86,7 @@ export default function Hero() {
           marginBottom: '8px',
           fontFamily: 'Cormorant Garamond, serif',
         }}>
-          Drinks By NIKHIL
+          Drinks By Nikhil
         </h1>
 
         <p style={{
