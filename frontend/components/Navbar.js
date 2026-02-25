@@ -58,7 +58,7 @@ export default function Navbar() {
                 fontWeight: '700',
                 color: 'var(--gold)',
                 letterSpacing: '0.18em',
-              }}>NOIR</span>
+              }}>Drinks by Nikhil</span>
               <span style={{
                 fontSize: '8px',
                 letterSpacing: '0.35em',
@@ -87,7 +87,7 @@ export default function Navbar() {
           <div className="desktop-nav" style={{ display: 'flex', gap: '12px', flexShrink: 0 }}>
             <SocialIcon href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || '1234567890'}`} label="WhatsApp"><WhatsAppIcon /></SocialIcon>
             <SocialIcon href={process.env.NEXT_PUBLIC_INSTAGRAM || 'https://instagram.com'} label="Instagram"><InstaIcon /></SocialIcon>
-            <SocialIcon href={`mailto:${process.env.NEXT_PUBLIC_EMAIL || 'hello@noir.bar'}`} label="Email"><EmailIcon /></SocialIcon>
+            <SocialIcon href={`mailto:${process.env.NEXT_PUBLIC_EMAIL || 'hello@Drinks by Nikhil.bar'}`} label="Email"><EmailIcon /></SocialIcon>
           </div>
 
           {/* ── Mobile: hamburger ── */}
@@ -156,7 +156,7 @@ export default function Navbar() {
               <span style={{ fontSize: '10px', letterSpacing: '0.25em', color: 'rgba(240,230,211,0.28)', textTransform: 'uppercase', marginRight: '6px' }}>Follow</span>
               <SocialIcon href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP || '1234567890'}`} label="WhatsApp"><WhatsAppIcon /></SocialIcon>
               <SocialIcon href={process.env.NEXT_PUBLIC_INSTAGRAM || 'https://instagram.com'} label="Instagram"><InstaIcon /></SocialIcon>
-              <SocialIcon href={`mailto:${process.env.NEXT_PUBLIC_EMAIL || 'hello@noir.bar'}`} label="Email"><EmailIcon /></SocialIcon>
+              <SocialIcon href={`mailto:${process.env.NEXT_PUBLIC_EMAIL || 'hello@Drinks by Nikhil.bar'}`} label="Email"><EmailIcon /></SocialIcon>
             </div>
           </div>
         </div>
@@ -227,7 +227,7 @@ function SocialIcon({ href, label, children }) {
         width: '34px', height: '34px',
         border: `1px solid ${hovered ? 'var(--gold)' : 'rgba(212,168,83,0.28)'}`,
         display: 'flex', alignItems: 'center', justifyContent: 'center',
-        color: hovered ? 'var(--noir)' : 'var(--gold)',
+        color: hovered ? 'var(--Drinks by Nikhil)' : 'var(--gold)',
         background: hovered ? 'var(--gold)' : 'transparent',
         transition: 'all 0.3s ease',
         textDecoration: 'none',

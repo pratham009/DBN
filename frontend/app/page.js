@@ -1,16 +1,20 @@
 'use client';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Story from '@/components/Story';
-import Menu from '@/components/Menu';
+import Packages from '@/components/Packages';
 import Events from '@/components/Events';
 import Reserve from '@/components/Reserve';
 import Footer from '@/components/Footer';
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false);
+
   // Custom cursor
   useEffect(() => {
+    setMounted(true);
+
     const cursor = document.createElement('div');
     const ring = document.createElement('div');
     cursor.className = 'cursor';
@@ -39,17 +43,19 @@ export default function Home() {
 
     return () => {
       document.removeEventListener('mousemove', moveCursor);
-      document.body.removeChild(cursor);
-      document.body.removeChild(ring);
+      if (document.body.contains(cursor)) document.body.removeChild(cursor);
+      if (document.body.contains(ring)) document.body.removeChild(ring);
     };
   }, []);
 
+  if (!mounted) return null;
+
   return (
-    <main>
+    <main style={{ width: '100%', maxWidth: '100vw', overflowX: 'hidden' }}>
       <Navbar />
       <Hero />
       <Story />
-      <Menu />
+      <Packages />
       <Events />
       <Reserve />
       <Footer />
