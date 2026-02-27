@@ -6,7 +6,7 @@ import Story from '@/components/Story';
 import Packages from '@/components/Packages';
 import Events from '@/components/Events';
 import Reserve from '@/components/Reserve';
-import Footer from '@/components/Footer';
+
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -58,7 +58,7 @@ export default function Home() {
       <Packages />
       <Events />
       <Reserve />
-      <Footer />
+      
     </main>
   );
 }
